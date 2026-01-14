@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: #020617;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Hero */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url("/static/images/hero.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+}
+
+.hero-content p {
+    margin: 15px 0 30px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Search */
+.search-container {
+    position: relative;
+    max-width: 520px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    bottom: 6px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Autocomplete */
+#suggestions {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    margin-top: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background: #e5e7eb;
+}
+
+/* Results */
+.results-section {
+    padding: 40px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movie-card {
+    transition: transform .3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}

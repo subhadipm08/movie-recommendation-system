@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome.</h1>
+        <p>Search here to get AI based movies Recommendation!</p>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="movieInput"
+                placeholder="Search movies..."
+                autocomplete="off"
+            />
+            <button id="recommendBtn">Recommend</button>
+
+            <ul id="suggestions"></ul>
+        </div>
+    </div>
+</section>
+
+<section class="results-section">
+    <h2 id="resultsTitle"></h2>
+    <div class="movie-grid" id="results"></div>
+</section>
+{% endblock %}
