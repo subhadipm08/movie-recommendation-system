@@ -1,12 +1,15 @@
 import requests
-from src.config import TMDB_API_KEY, TMDB_IMAGE_BASE_URL
+from src.config import  TMDB_API_KEY_CONFIG,TMDB_IMAGE_BASE_URL
+
 
 
 def fetch_movie_poster(movie_id: int) -> str:
     """
     Fetch movie poster using TMDB movie ID.
     """
+
     try:
+        TMDB_API_KEY = TMDB_API_KEY_CONFIG
         url = f"https://api.themoviedb.org/3/movie/{movie_id}"
         params = {
             "api_key": TMDB_API_KEY
@@ -25,6 +28,7 @@ def fetch_movie_poster(movie_id: int) -> str:
 
     except Exception:
         return "/static/images/no_poster.png"
+
     
 # if __name__=="__main__":
 #     print(fetch_movie_poster(285))
