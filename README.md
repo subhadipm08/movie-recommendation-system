@@ -4,7 +4,7 @@ A **content-based Movie Recommendation System** built using **Machine Learning, 
 The application recommends **Top-5 similar movies** based on a user’s search input and displays **movie posters** using a modern, interactive web interface.
 
 ---
-🔗 **Live Demo:** [http://ec2-13-235-90-140.ap-south-1.compute.amazonaws.com/](http://ec2-13-235-90-140.ap-south-1.compute.amazonaws.com/)
+🔗 **Live Demo:** Currently Not Available.
 
 ---
 
