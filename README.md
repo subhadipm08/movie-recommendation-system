@@ -7,7 +7,7 @@ The application recommends **Top-5 similar movies** based on a user’s search i
 🔗 **Live Demo:** Currently Not Available.
 
 ---
-**Docker Hub:** docker pull subhadip08/movie-recommender:latest
+  **Docker Hub:** [https://hub.docker.com/repository/docker/subhadip08/movie-recommender/](https://hub.docker.com/repository/docker/subhadip08/movie-recommender/)
 ---
 ## 🚀 Features
 
