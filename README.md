@@ -4,7 +4,7 @@ A **content-based Movie Recommendation System** built using **Machine Learning, 
 The application recommends **Top-5 similar movies** based on a user’s search input and displays **movie posters** using a modern, interactive web interface.
 
 ---
-🔗 **Live Demo:** Currently Not Available.
+🔗 **Live Demo:** [https://movie-recommendation-system-f1hm.onrender.com](https://movie-recommendation-system-f1hm.onrender.com)
 
 ---
   **Docker Hub:** [https://hub.docker.com/repository/docker/subhadip08/movie-recommender/](https://hub.docker.com/repository/docker/subhadip08/movie-recommender/)
