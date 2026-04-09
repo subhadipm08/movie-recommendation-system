@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+
+# Notebooks & docs
+Notebook/
+web-app-view/
+
+# Raw data
+data/raw/
+
+# Pickle files (generated in Docker)
+*.pkl
+
+# Git
+.git/
+.gitignore
+
+# Environment secrets
+.env

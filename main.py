@@ -23,7 +23,7 @@ def main():
     save_pickle(movies, MOVIES_PATH)
     save_pickle(similarity, SIMILARITY_PATH)
 
-    print("✅ Movies & similarity saved successfully")
+    print("DONE: Movies & similarity saved successfully")
 
     # -------------------------------
     # 6️⃣ LOAD PICKLES (IMPORTANT)
@@ -31,7 +31,7 @@ def main():
     movies_loaded = load_pickle(MOVIES_PATH)
     similarity_loaded = load_pickle(SIMILARITY_PATH)
 
-    print("✅ Movies & similarity loaded successfully")
+    print("DONE: Movies & similarity loaded successfully")
 
     # -------------------------------
     # 7️⃣ OFFLINE RECOMMENDATION TEST
@@ -46,12 +46,12 @@ def main():
             top_n=5
         )
 
-        print(f"\n🎬 Recommendations for '{test_movie}':")
+        print(f"\nRecommendations for '{test_movie}':")
         for title, movie_id in results:
             print(f"- {title} (ID: {movie_id})")
 
     except Exception as e:
-        print("❌ Recommendation failed:", e)
+        print("ERROR: Recommendation failed:", e)
 
 
 if __name__ == "__main__":

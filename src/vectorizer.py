@@ -1,3 +1,4 @@
+import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
@@ -5,7 +6,7 @@ import pandas as pd
 
 def build_similarity(df: pd.DataFrame, text_col: str = "tags"):
     """
-    Build cosine similarity matrix.
+    Build cosine similarity matrix with reduced precision for low-RAM environments.
     """
     if text_col not in df.columns:
         raise KeyError(f"Column '{text_col}' not found")
@@ -13,5 +14,6 @@ def build_similarity(df: pd.DataFrame, text_col: str = "tags"):
     vectorizer = CountVectorizer(max_features=5000, stop_words="english")
     vectors = vectorizer.fit_transform(df[text_col])
 
-    similarity = cosine_similarity(vectors)
+    # Compute similarity and cast to float16 to save RAM (Render Free Plan Optimization)
+    similarity = cosine_similarity(vectors).astype(np.float16)
     return similarity
